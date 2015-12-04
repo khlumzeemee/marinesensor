@@ -27,6 +27,7 @@ def create_client_socket():
         try:
             data = clientsocket.recv(10)
             print ('Received', str(data))
+            clientsocket.send("hello")
         except KeyboardInterrupt:
             clientsocket.close()
             print("Socket closed")

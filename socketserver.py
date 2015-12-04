@@ -19,7 +19,8 @@ class ServerSocketThread(threading.Thread):
             time.sleep(random.randrange(5))
         
 def create_server_socket():
-    serversocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)    
+    serversocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+
     #serversocket.bind((socket.gethostname(), 8080))
 
     #Enable port reuse after kill
